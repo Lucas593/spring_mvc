@@ -4,22 +4,14 @@ import java.util.LinkedHashMap;
 
 public class Student {
 
+	//Refactor: No Student somente foi organizado os getters e setters para melhor leitura.
+	
 	private String firstName;
 	private String lastName;
 	private String country;
 	private LinkedHashMap<String, String> countryOptions;
 	private String favoriteLanguage;
 	private String[] operationSystems;
-
-	public Student(String firstName, String lastName, String country, LinkedHashMap<String, String> countryOptions,
-			String favoriteLanguage, String[] operationSystems) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.country = country;
-		this.countryOptions = countryOptions;
-		this.favoriteLanguage = favoriteLanguage;
-		this.operationSystems = operationSystems;
-	}
 
 	public String getFavoriteLanguage() {
 		return favoriteLanguage;

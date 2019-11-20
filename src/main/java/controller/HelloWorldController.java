@@ -22,7 +22,6 @@ public class HelloWorldController {
 	public String processForm() {
 		/*
 		 * Refactor: não e necessario o uso do println dentro do controller.
-		 * System.out.println("show form");
 		 */
 		return "showForm";
 	}
@@ -30,12 +29,6 @@ public class HelloWorldController {
 	/*
 	 * Refactor: Remover processFormV2 porque acredito que ele faz a mesma coisa de
 	 * processFormV3 porem de forma menos otimizada.
-	 * 
-	 * @RequestMapping("/processFormV2") public String
-	 * upperCaseStudentName(HttpServletRequest request, Model model) { String
-	 * studentName = request.getParameter("studentName").toUpperCase();
-	 * System.out.println(studentName); model.addAttribute("message", studentName);
-	 * return "showForm"; }
 	 */
 
 	@RequestMapping("/processFormV3")
@@ -44,7 +37,6 @@ public class HelloWorldController {
 		studentName = studentName.toUpperCase();
 		/*
 		 * Refactor: não e necessario o uso do println dentro do controller.
-		 * System.out.println(studentName);
 		 */
 		model.addAttribute("message", "Hello " + studentName);
 		return "showForm";

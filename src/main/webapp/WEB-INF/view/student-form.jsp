@@ -11,6 +11,8 @@
 </head>
 <body>
 
+	<!-- Refactor: Nos arquivos jsp somente foi formatado para ficar com uma identação melhor -->
+	
 	<form:form action="processForm" modelAttribute="student">
 	
 		First Name: <form:input path="firstName" />
